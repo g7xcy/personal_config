@@ -1,0 +1,20 @@
+{
+  "styles": {
+    "comments": [
+      "italic"
+    ],
+    "conditionals": [
+      "italic"
+    ],
+    "parameters": [
+      "italic"
+    ],
+    "namespaces": [
+      "italic"
+    ],
+    "markup_link_url": [
+      "italic",
+      "underlined"
+    ]
+  }
+}

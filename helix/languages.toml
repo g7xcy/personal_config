@@ -1,0 +1,5 @@
+[language-server.ruff]
+command = "ruff-lsp"
+name = "python"
+language-servers = ["ruff"]
+auto-format = true
