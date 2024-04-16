@@ -7,4 +7,6 @@ if status is-interactive
     abbr -a lsa ls -al
     abbr -a gitc git commit
     abbr -a gita git add
+    abbr -a gitpl git pull
+    abbr -a gitps git push
 end
