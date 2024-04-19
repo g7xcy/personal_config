@@ -1,8 +1,4 @@
 if status is-interactive
-    # Commands to run in interactive sessions can go here
-    set -x COLORTERM truecolor
-    set -x fish_charset utf-8
-
     # Abbr about git
     abbr -a gitc git commit
     abbr -a gita git add
@@ -13,7 +9,5 @@ if status is-interactive
     # Abbr about os
     abbr -a lsa ls -al
     abbr -a cls clear
-
-    # Abbr about lang
-    abbr -a py python3
+    abbr -a sudo sudo -E
 end
