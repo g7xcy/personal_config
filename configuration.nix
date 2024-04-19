@@ -19,6 +19,9 @@
   # enable flakse
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
+  # set timezone
+  time.timeZone = "Asia/Shanghai";
+  
   # setting sudo rules
   # security.sudo.keetTerminfo = true;
 
