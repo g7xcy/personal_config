@@ -19,26 +19,31 @@
   # enable flakse
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
+  # setting sudo rules
+  # security.sudo.keetTerminfo = true;
+
   # add system packages
   environment.systemPackages = with pkgs; [
-    git
-    helix
+    cargo
     curl
-    wget
+    elixir_1_16
     fish
     fzf
-    zoxide
-    screenfetch
+    git
+    go
+    helix
     neofetch
-    rustc
-    cargo
-    rust-analyzer
+    nil
+    nixfmt
+    ollama
+    pyright
     python311
     ruff
     ruff-lsp
-    pyright
-    go
-    elixir_1_16
+    rustc
+    rust-analyzer
+    wget
+    zoxide
   ];
 
   # set environment variables
@@ -50,13 +55,13 @@
   programs.fish.enable = true;
   # set default shell to fish
   users.defaultUserShell = pkgs.fish;
-  
+
   # add user
   users.users.<username> = {
     isNormalUser = true;
     home = "/home/<username>";
     description = "";
-    extraGroups = ["wheel"];
+    extraGroups = [ "wheel" ];
   };
 
   # change firewall
@@ -64,7 +69,7 @@
     enable = true;
     allowedTCPPorts = [];
   };
-  
+
   # enable ssh
   services.openssh = {
     enable = true;
@@ -77,12 +82,11 @@
     };
     openFirewall = true;
   };
-  
+
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
   # on your system were taken. It's perfectly fine and recommended to leave
   # this value at the release version of the first install of this system.
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
-  system.stateVersion = "23.11"; # Did you read the comment?
-}
+  system.stateVersion = "23.11"; # Did you read the comment<port>
