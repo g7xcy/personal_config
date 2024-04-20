@@ -9,6 +9,7 @@ if status is-interactive
     abbr -a lsa ls -al
     abbr -a cls clear
     abbr -a sudo sudo -E
+    abbr -a cd z
 end
 
 zoxide init fish | source
