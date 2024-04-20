@@ -27,13 +27,11 @@
 
   # add system packages
   environment.systemPackages = with pkgs; [
-    cargo
     curl
-    elixir_1_16
+    direnv
     fish
     fzf
     git
-    go
     helix
     neofetch
     nil
@@ -43,8 +41,6 @@
     python311
     ruff
     ruff-lsp
-    rustc
-    rust-analyzer
     wget
     zoxide
   ];
